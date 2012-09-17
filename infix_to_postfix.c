@@ -52,7 +52,6 @@ int main(void)
 						
 						if((higher_precedence(peek(operators),val)==1) || (higher_precedence(peek(operators),val)==0))
 						{
-								printf("%c > %c\n", peek(operators), val);
 								while(!empty_s(operators))
 								{
 										enqueue(output_queue,pop(operators));
@@ -70,6 +69,9 @@ int main(void)
 				printf("%c",dequeue(output_queue));
 		}
 		printf("\n");
+		free(input_queue);
+		free(output_queue);
+		free(operators);
 		return 0;
 }
 /*
