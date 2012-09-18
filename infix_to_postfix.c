@@ -78,7 +78,5 @@ int main(void)
 NOTE:
 @Change the name of is_empty() to empty(). DONE
 @Add a empty() function to queue.h. DONE
-@Write a makefile for compilation. 
-@Add a function calculate to calculate the expression. 
 */
 
